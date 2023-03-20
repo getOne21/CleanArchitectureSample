@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting.Server;
+﻿using CleanArchitectureSample.Filters;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitectureSample.Controllers

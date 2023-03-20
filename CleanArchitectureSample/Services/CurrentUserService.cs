@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using CleanArchitectureSample.Application.Common.Interfaces;
+using System.Security.Claims;
 
 namespace CleanArchitectureSample.Services;
 

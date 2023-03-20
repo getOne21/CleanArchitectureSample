@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CleanArchitectureSample.Application.Common.Exceptions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using System.ComponentModel.DataAnnotations;
+using ValidationException = CleanArchitectureSample.Application.Common.Exceptions.ValidationException;
 
 namespace CleanArchitectureSample.Filters;
 
