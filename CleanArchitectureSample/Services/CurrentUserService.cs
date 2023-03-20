@@ -1,16 +1,14 @@
 ﻿using System.Security.Claims;
 
-namespace CleanArchitecture.WebUI.Services;
+namespace CleanArchitectureSample.Services;
 
 public class CurrentUserService : ICurrentUserService
 {
     private readonly IHttpContextAccessor httpContextAccessor;
 
-    public CurrentUserService(IHttpContextAccessor httpContextAccessor)
-    {
-        this.httpContextAccessor = httpContextAccessor;
-    }
+    public CurrentUserService(IHttpContextAccessor httpContextAccessor) 
+        => this.httpContextAccessor = httpContextAccessor;
 
-    public string? UserId 
-        => httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
+    public string? UserId
+        => this.httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
 }
